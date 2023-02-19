@@ -1,0 +1,106 @@
+.project-container {
+  width: 100%;
+  background-color: var(--primary-bgcolor);
+  padding: 15px;
+}
+
+.projects {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+
+.card-proj {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  max-width: 400px;
+  border-radius: 6px;
+  background-image: linear-gradient(to bottom, #dbdcd7 0%, #dddcd7 14%, #e2c9cc 26%, #e7627d 40%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+  /* background-image: linear-gradient(45deg, #5e5f1d, #ffffff); */
+  background-size: 100% 100%;
+  animation: animbg 2.5s infinite ease-in-out;
+
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  border-right-color: rgba(255, 255, 255, 0.01);
+  border-bottom-color: rgba(255, 255, 255, 0.01);
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+  padding: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 15px 0;
+  text-decoration: none;
+}
+
+@keyframes animbg {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.card-proj,
+.card-proj * {
+  box-sizing: border-box;
+  transition: 400ms;
+}
+
+.card-img-proj img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  object-fit: contain;
+}
+
+.card-title-proj {
+  text-align: center;
+  margin-top: 8px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.card-content-proj {
+  position: absolute;
+  right: 32px;
+  bottom: 10px;
+  left: 32px;
+  text-align: justify;
+  color: #fff;
+  font-size: 0.75rem;
+  opacity: 0;
+}
+
+.card-proj:hover .card-img-proj {
+  transform: translateY(-50px);
+}
+
+.card-proj:hover .card-img-proj img {
+  transform: translate(-16px, -42px) rotate(-8deg) scale(1.15);
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
+  z-index: 10;
+}
+
+.card-proj:hover .card-content-proj {
+  opacity: 1;
+}
