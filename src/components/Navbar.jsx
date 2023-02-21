@@ -47,7 +47,7 @@ const Navbar = () => {
           </div>
           <div className='social-media' onClick={() => setIsOpen(!isOpen)}>
             <abbr title="CV">
-              <a href="https://drive.google.com/file/d/1TwXGwlmLz1_jLuiG79S0GYlExSR4ESyL/view" target={'_blank'} className='social-media-icon'>
+              <a href="https://drive.google.com/file/d/1w5StUI8HLsZ2e256OLzgvTWi5EPlO9Ez/view" target={'_blank'} className='social-media-icon'>
                 <i className='bx bx-id-card'></i>
               </a>
             </abbr>
