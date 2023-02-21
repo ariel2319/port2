@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/skills-style.css'
+import js from '../../public/technology/JS.png'
 
 //const cardImages = require.context('../assets/technology', true)
 
@@ -11,7 +12,7 @@ const Skills = () => {
       <ul>
 
         <li>
-          <h4 className='title-h4'><span className='point-span'>📌</span><a href="https://certificates.academlo.com/en/verify/39296980516484" target={'_blank'}> Desarrollador WEB FULL STACK</a></h4>
+          <h4 className='title-h4'><span className='point-span'>📌</span><a href={js} target={'_blank'}> Desarrollador WEB FULL STACK</a></h4>
           <p>Institución: <b> ACADEMLO </b></p>
         </li><br></br>
 
