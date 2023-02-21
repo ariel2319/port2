@@ -1,11 +1,11 @@
 import React from 'react';
 import CardProject from './CardProject';
-import comerceR from '../../public/projects/e-commerceReact.JPG';
-import comerceH from '../../public/projects/e-commerce-JS-HTML-CSS.JPG';
-import pokedex from '../../public/projects/pokedex.JPG';
-import shadow from '../../public/projects/box-shadow.JPG';
-import weather from '../../public/projects/weather.JPG';
-import quotes from '../../public/projects/101-quotes.JPG';
+import comerceR from '../../public/projects/e-commerceReact.jpg';
+import comerceH from '../../public/projects/e-commerce-JS-HTML-CSS.jpg';
+import pokedex from '../../public/projects/pokedex.jpg';
+import shadow from '../../public/projects/box-shadow.jpg';
+import weather from '../../public/projects/weather.jpg';
+import quotes from '../../public/projects/101-quotes.jpg';
  
 const Projects = () => {
   return (

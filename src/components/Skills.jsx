@@ -60,7 +60,7 @@ const Skills = () => {
               alt={"JS"}
             />
           </div>
-          <h5>Javas Script</h5>
+          <h5>Java Script</h5>
         </div>
 
         <div href="" className='card html'>
