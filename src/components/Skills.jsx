@@ -58,6 +58,7 @@ const Skills = () => {
             <img
               src={js}
               alt={"JS"}
+              onClick={() => scrollToTop()}
             />
           </div>
           <h5>Java Script</h5>
@@ -90,7 +91,7 @@ const Skills = () => {
         <div href="" className='card redux'>
           <div className='cor__cobertura'></div>
           <div className='circulo'>
-            <img src={redux}  alt="" />
+            <img src={redux} alt="" />
           </div>
           <h5>Redux</h5>
         </div>
@@ -98,7 +99,7 @@ const Skills = () => {
         <div href="" className='card router'>
           <div className='cor__cobertura'></div>
           <div className='circulo'>
-            <img src={router}  alt="" />
+            <img src={router} alt="" />
           </div>
           <h5>Router</h5>
         </div>
@@ -114,7 +115,7 @@ const Skills = () => {
         <div href="" className='card bs'>
           <div className='cor__cobertura'></div>
           <div className='circulo'>
-            <img src={bootstrap}  alt="" />
+            <img src={bootstrap} alt="" />
           </div>
           <h5>BootStrap</h5>
         </div>
@@ -122,7 +123,7 @@ const Skills = () => {
         <div href="" className='card github'>
           <div className='cor__cobertura'></div>
           <div className='circulo'>
-            <img src={github}  alt="" />
+            <img src={github} alt="" />
           </div>
           <h5>Git Hub</h5>
         </div>
@@ -130,7 +131,7 @@ const Skills = () => {
         <div href="" className='card node'>
           <div className='cor__cobertura'></div>
           <div className='circulo'>
-            <img src={node}  alt="" />
+            <img src={node} alt="" />
           </div>
           <h5>Node JS</h5>
         </div>

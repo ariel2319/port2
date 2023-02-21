@@ -1,21 +1,35 @@
 import React, { useState } from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 import '../styles/navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  }
   return (
 
     <div className="navbar">
-      <div className="nav_logo">
+      <link rel="stylesheet" href="" />
+
+      <div className="nav_logo"
+        onClick={() => scrollToTop()}
+      >
         Ariel Maldonado
+        {/* <img src="../../public/LOGO.png" alt="" /> */}
       </div>
+
       <div className={`nav_items ${isOpen && "open"}`}>
-        <a href="#home" onClick={() => setIsOpen(!isOpen)}> <i className="fa-sharp fa-solid fa-house"></i> Inicio</a>
+        <a href="#home" onClick={() => setIsOpen(!isOpen)}><i className="fa-sharp fa-solid fa-house"></i> Inicio </a>
         <a href="#about" onClick={() => setIsOpen(!isOpen)}><i className="fa-regular fa-user"></i> Acerca de mi</a>
         <a href="#skills" onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-list-check"></i> Habilidades</a>
         <a href="#projects" onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-diagram-project"></i> Proyectos</a>
         <a href="#contact" onClick={() => setIsOpen(!isOpen)}><i className="fa-regular fa-envelope"></i> Contacto</a>
+
+
+
+
         <div className='nav-social'>
           <div className='social-media' onClick={() => setIsOpen(!isOpen)}>
             <abbr title="Linkedin">
