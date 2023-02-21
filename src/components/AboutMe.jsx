@@ -1,5 +1,5 @@
 import React from 'react';
-import fotito from '../../public/foto-portafolio.jpg';
+import fotito from '../../public/foto-portafolio.png';
 
 const AboutMe = () => {
   return (

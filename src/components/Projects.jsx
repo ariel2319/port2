@@ -1,12 +1,12 @@
 import React from 'react';
 import CardProject from './CardProject';
-import comerceR from '../../public/projects/e-commerceReact.jpg';
-import comerceH from '../../public/projects/e-commerce-JS-HTML-CSS.jpg';
-import pokedex from '../../public/projects/pokedex.jpg';
-import shadow from '../../public/projects/box-shadow.jpg';
-import weather from '../../public/projects/weather.jpg';
-import quotes from '../../public/projects/101-quotes.jpg';
- 
+import comerceR from '../../public/projects/e-commerceReact.svg';
+import comerceH from '../../public/projects/e-commerce-JS-HTML-CSS.svg';
+import pokedex from '../../public/projects/pokedex.svg';
+import shadow from '../../public/projects/box-shadow.svg';
+import weather from '../../public/projects/weather.svg';
+import quotes from '../../public/projects/101-quotes.svg';
+
 const Projects = () => {
   return (
     <div className='container' id='projects'>

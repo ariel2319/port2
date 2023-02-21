@@ -11,27 +11,9 @@ import './styles/style.css'
 
 function App() {
 
-  /* useEffect(() => {
-    const hamb = document.querySelector('.hamburguer');
-    const menu = document.querySelector('.nav-menu');
-    console.log(hamb, 'hamburguer');
-    console.log(menu, 'menu');
-
-    hamb.addEventListener('click', () => {
-      menu.classList.toggle("spread");
-    })
-
-    window.addEventListener("click", (e) => {
-      if (menu.classList.contains("spread") && e.target != menu && e.target != hamb) {
-        menu.classList.toggle("spread");
-      }
-    })
-  }, []); */
-
   return (
     <div className='header'>
       <div >
-        {/* <Hamburguer /> */}
         <Navbar/>
       </div>
 
@@ -40,7 +22,7 @@ function App() {
       <div className='main'>
         <AboutMe />
         <Skills />
-        <Projects />
+        {/* <Projects /> */}
         <Contact />
         <SocialMedia />
       </div>
