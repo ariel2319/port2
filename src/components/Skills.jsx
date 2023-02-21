@@ -12,7 +12,7 @@ const Skills = () => {
       <ul>
 
         <li>
-          <h4 className='title-h4'><span className='point-span'>📌</span><a href={js} target={'_blank'}> Desarrollador WEB FULL STACK</a></h4>
+          <h4 className='title-h4'><span className='point-span'>📌</span><a href="https://certificates.academlo.com/en/verify/39296980516484" target={'_blank'}> Desarrollador WEB FULL STACK</a></h4>
           <p>Institución: <b> ACADEMLO </b></p>
         </li><br></br>
 
@@ -47,11 +47,11 @@ const Skills = () => {
           <div className='cor__cobertura'></div>
           <div className='circulo'>
             <img
-              src={'../../public/technology/javascript.svg'}
+              src={js}
               alt={"JS"}
             />
           </div>
-          <h5>Java Script</h5>
+          <h5>Javas Script</h5>
         </div>
 
         <div href="" className='card html'>
