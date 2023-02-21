@@ -1,6 +1,12 @@
 import React from 'react';
 import CardProject from './CardProject';
-
+import comerceR from '../../public/projects/e-commerceReact.JPG';
+import comerceH from '../../public/projects/e-commerce-JS-HTML-CSS.JPG';
+import pokedex from '../../public/projects/pokedex.JPG';
+import shadow from '../../public/projects/box-shadow.JPG';
+import weather from '../../public/projects/weather.JPG';
+import quotes from '../../public/projects/101-quotes.JPG';
+ 
 const Projects = () => {
   return (
     <div className='container' id='projects'>
@@ -11,14 +17,14 @@ const Projects = () => {
         <CardProject
           title={'E-commerce'}
           description={'E-commerce realizado utilizando ReactJs, React Router para rutas protegidas, React Hook Form'}
-          img={'../../public/projects/e-commerceReact.JPG'}
+          img={comerceR}
           url={'https://e6-e-commerce-maldonadoaa.netlify.app/'}
         />
 
         <CardProject
           title={'Pokedex'}
           description={'App que simula el funcionamiento de una Pokédex, de la serie Pokémon, donde podemos buscarlos por Nombre y ver sus características. Utilizando ReactJS, React Router.'}
-          img={'../../public/projects/pokedex.JPG'}
+          img={pokedex}
           url={'https://e5-pokedex-maldonadoaa.netlify.app/'}
         />
 
@@ -26,28 +32,28 @@ const Projects = () => {
         <CardProject
           title={'Weather'}
           description={'Aplicación Web que nos permite ver información de la localización donde es ejecutada. Utilizando ReactJS y consumo de API'}
-          img={'../../public/projects/weather.JPG'}
+          img={weather}
           url={'https://e2-weather-arry.netlify.app/'}
         />
 
         <CardProject
           title={'Box-Shadow Generator'}
           description={'Una web que brinda la posibilidad de emular la sombra generada por la propiedad Box Shadow. Utilizando propiedades de '}
-          img={'../../public/projects/box-shadow.JPG'}
+          img={shadow}
           url={'https://maldonadoaa-boxshados-generator.netlify.app/'}
         />
 
         <CardProject
           title={'Quotes'}
           description={'Es una web que nos muestra aleatoreamente citas de grandes autores. Utilizando consumo de API'}
-          img={'../../public/projects/101-quotes.JPG'}
+          img={quotes}
           url={'https://e1-101inspirationalquotes-maldonado.netlify.app/'}
         />
 
         <CardProject
           title={'E-commerce JS'}
           description={'E-commerce realizado utilizando JS, HTML y CSS'}
-          img={'../../public/projects/e-commerce-JS-HTML-CSS.JPG'}
+          img={comerceH}
           url={'https://e-commerce-lapalanca-aam.netlify.app/'}
         />
 
