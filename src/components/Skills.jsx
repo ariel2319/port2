@@ -1,6 +1,15 @@
 import React from 'react';
 import '../styles/skills-style.css'
 import js from '../../public/technology/JS.png'
+import html from '../../public/technology/html.svg'
+import react from '../../public/technology/react.svg'
+import redux from '../../public/technology/redux.svg'
+import router from '../../public/technology/router.svg'
+import git from '../../public/technology/git.svg'
+import github from '../../public/technology/github.svg'
+import bootstrap from '../../public/technology/bootstrap.svg'
+import node from '../../public/technology/nodejs.png'
+import express from '../../public/technology/express.png'
 
 //const cardImages = require.context('../assets/technology', true)
 
@@ -57,7 +66,7 @@ const Skills = () => {
         <div href="" className='card html'>
           <div className='cor__cobertura'></div>
           <div className='circulo'>
-            <img src="../../public/technology/html.svg" alt="" />
+            <img src={html} alt="" />
           </div>
           <h5>HTML 5</h5>
         </div>
@@ -73,7 +82,7 @@ const Skills = () => {
         <div href="" className='card react'>
           <div className='cor__cobertura'></div>
           <div className='circulo'>
-            <img src="../../public/technology/react.svg" alt="" />
+            <img src={react} alt="" />
           </div>
           <h5>React</h5>
         </div>
@@ -81,7 +90,7 @@ const Skills = () => {
         <div href="" className='card redux'>
           <div className='cor__cobertura'></div>
           <div className='circulo'>
-            <img src="../../public/technology/redux.svg" alt="" />
+            <img src={redux}  alt="" />
           </div>
           <h5>Redux</h5>
         </div>
@@ -89,7 +98,7 @@ const Skills = () => {
         <div href="" className='card router'>
           <div className='cor__cobertura'></div>
           <div className='circulo'>
-            <img src="../../public/technology/router.svg" alt="" />
+            <img src={router}  alt="" />
           </div>
           <h5>Router</h5>
         </div>
@@ -97,7 +106,7 @@ const Skills = () => {
         <div href="" className='card git'>
           <div className='cor__cobertura'></div>
           <div className='circulo'>
-            <img src="../../public/technology/git.svg" alt="" />
+            <img src={git} alt="" />
           </div>
           <h5>Git</h5>
         </div>
@@ -105,7 +114,7 @@ const Skills = () => {
         <div href="" className='card bs'>
           <div className='cor__cobertura'></div>
           <div className='circulo'>
-            <img src="../../public/technology/bootstrap.svg" alt="" />
+            <img src={bootstrap}  alt="" />
           </div>
           <h5>BootStrap</h5>
         </div>
@@ -113,7 +122,7 @@ const Skills = () => {
         <div href="" className='card github'>
           <div className='cor__cobertura'></div>
           <div className='circulo'>
-            <img src="../../public/technology/github.svg" alt="" />
+            <img src={github}  alt="" />
           </div>
           <h5>Git Hub</h5>
         </div>
@@ -121,7 +130,7 @@ const Skills = () => {
         <div href="" className='card node'>
           <div className='cor__cobertura'></div>
           <div className='circulo'>
-            <img src="../../public/technology/nodejs.png" alt="" />
+            <img src={node}  alt="" />
           </div>
           <h5>Node JS</h5>
         </div>
@@ -129,7 +138,7 @@ const Skills = () => {
         <div href="" className='card express'>
           <div className='cor__cobertura'></div>
           <div className='circulo'>
-            <img src="../../public/technology/express.png" alt="" />
+            <img src={express} alt="" />
           </div>
           <h5>Express JS</h5>
         </div>
