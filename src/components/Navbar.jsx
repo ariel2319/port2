@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
+import '../styles/navbar.css';
 
-const Hamburguer = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
-      <img src="../../public/menu-hamburguer.svg" alt="" class='hamburguer hamb2' />
 
-      <nav className='nav-menu'>
+    <div className="navbar">
+      <div className="nav_logo">
+        Ariel Maldonado
+      </div>
+      <div className={`nav_items ${isOpen && "open"}`}>
         <a href="#home"> <i className="fa-sharp fa-solid fa-house"></i> Inicio</a>
         <a href="#about"><i className="fa-regular fa-user"></i> Acerca de mi</a>
         <a href="#skills"><i className="fa-solid fa-list-check"></i> Habilidades</a>
@@ -36,9 +39,14 @@ const Hamburguer = () => {
             </abbr>
           </div>
         </div>
-      </nav>
+      </div>
+      <div className={`nav_toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}  >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   );
 };
 
-export default Hamburguer;
+export default Navbar;
