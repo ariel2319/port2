@@ -21,7 +21,7 @@ const SocialMedia = () => {
           </a>
         </div>
         <div className='social-media'>
-          <a href="https://docs.google.com/document/d/1-rU9qa9npsk3g3nwmAygEkpN0MnwZJot/edit?usp=share_link&ouid=112512721761573156683&rtpof=true&sd=true" target={'_blank'} className='social-media-icon i2'>
+          <a href="https://docs.google.com/document/d/12jyQJqI8lo5VqC_VeA9iFCR5ZR_zT-UM/edit?usp=sharing&ouid=112512721761573156683&rtpof=true&sd=true" target={'_blank'} className='social-media-icon i2'>
             <i class='bx bx-id-card'></i>
           </a>
         </div>
