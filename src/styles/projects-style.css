@@ -23,8 +23,7 @@
   min-height: 300px;
   max-width: 400px;
   border-radius: 6px;
-  background-image: linear-gradient(to bottom, #dbdcd7 0%, #dddcd7 14%, #e2c9cc 26%, #e7627d 40%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
-  /* background-image: linear-gradient(45deg, #5e5f1d, #ffffff); */
+  background-image: linear-gradient(to bottom, rgb(219, 220, 215, 0.5) 0%, rgb(221, 220, 215, 0.5) 14%, rgb(226, 201, 204, 0.5) 26%, rgb(231, 98, 125, 0.5) 40%, rgb(184, 35, 90, 0.5) 59%, rgb(129, 19, 87, 0.5) 71%, rgb(61, 22, 53, 0.5) 84%, rgb(28, 26, 39, 0.5) 100%);
   background-size: 100% 100%;
   animation: animbg 2.5s infinite ease-in-out;
 
@@ -32,7 +31,7 @@
   border: 1px solid rgba(255, 255, 255, 0.02);
   border-right-color: rgba(255, 255, 255, 0.01);
   border-bottom-color: rgba(255, 255, 255, 0.01);
-  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px 6px rgba(63, 62, 62, 0.8);
   padding: 12px;
 
   display: flex;

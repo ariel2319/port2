@@ -1,12 +1,12 @@
 import React from 'react';
+import Logo from './Logo';
 
 const SocialMedia = () => {
   return (
     <div className='footer-container' id='social'>
 
       <div className="contact-us">
-        <img src="" alt="" />
-        <h2 className='brand'> Ariel Maldonado </h2>
+        <Logo />
         <p> Con el objetivo de cumplir tus sueños </p>
       </div>
       <div className='icons'>

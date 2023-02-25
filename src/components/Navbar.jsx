@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import '../styles/navbar.css';
+import Logo from './Logo';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,9 @@ const Navbar = () => {
       <div className="nav_logo"
         onClick={() => scrollToTop()}
       >
-        Ariel Maldonado
+        {/* Ariel Maldonado */}
+        <Logo/>
+        {/* <h1 className='logo-h1'> Ariel Maldonado </h1> */}
         {/* <img src="../../public/LOGO.png" alt="" /> */}
       </div>
 
@@ -47,7 +50,7 @@ const Navbar = () => {
           </div>
           <div className='social-media' onClick={() => setIsOpen(!isOpen)}>
             <abbr title="CV">
-              <a href="https://docs.google.com/document/d/12jyQJqI8lo5VqC_VeA9iFCR5ZR_zT-UM/edit?usp=sharing&ouid=112512721761573156683&rtpof=true&sd=true" target={'_blank'} className='social-media-icon'>
+              <a href="https://docs.google.com/document/d/12jyQJqI8lo5VqC_VeA9iFCR5ZR_zT-UM/edit?usp=sharing&ouid=112512721761573156683&rtpof=true&sd=truenpm run dev" target={'_blank'} className='social-media-icon'>
                 <i className='bx bx-id-card'></i>
               </a>
             </abbr>
