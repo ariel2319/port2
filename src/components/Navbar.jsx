@@ -12,15 +12,10 @@ const Navbar = () => {
   return (
 
     <div className="navbar">
-      <link rel="stylesheet" href="" />
-
       <div className="nav_logo"
         onClick={() => scrollToTop()}
       >
-        {/* Ariel Maldonado */}
         <Logo/>
-        {/* <h1 className='logo-h1'> Ariel Maldonado </h1> */}
-        {/* <img src="../../public/LOGO.png" alt="" /> */}
       </div>
 
       <div className={`nav_items ${isOpen && "open"}`}>
@@ -29,9 +24,6 @@ const Navbar = () => {
         <a href="#skills" onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-list-check"></i> Habilidades</a>
         <a href="#projects" onClick={() => setIsOpen(!isOpen)}><i className="fa-solid fa-diagram-project"></i> Proyectos</a>
         <a href="#contact" onClick={() => setIsOpen(!isOpen)}><i className="fa-regular fa-envelope"></i> Contacto</a>
-
-
-
 
         <div className='nav-social'>
           <div className='social-media' onClick={() => setIsOpen(!isOpen)}>

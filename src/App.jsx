@@ -1,7 +1,5 @@
-import { useEffect } from 'react'
 import AboutMe from './components/AboutMe'
 import Contact from './components/Contact'
-import Hamburguer from './components/Hamburguer'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
@@ -9,24 +7,35 @@ import Skills from './components/Skills'
 import SocialMedia from './components/SocialMedia'
 import './styles/style.css'
 
+import { Fragment } from 'react';
+import ScrollButton from './components/ScrollButton';
+import { Content, Heading } from './components/Styles';
+import Bubble from './components/Bubble'
+
+
 function App() {
 
   return (
     <div className='header'>
-      <div >
-        <Navbar/>
-      </div>
+      <Fragment>
+        <div >
+          <Navbar />
+          <Content />
+        </div>
+        <Home />
 
-      <Home />
+        <div className='main'>
+          <AboutMe />
+          <Skills />
+          <Projects />
+          <Contact />
+          <SocialMedia />
+        </div>
 
-      <div className='main'>
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <Contact />
-        <SocialMedia />
-      </div>
 
+        <ScrollButton />
+        <Bubble />
+      </Fragment>
     </div>
   )
 }

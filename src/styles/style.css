@@ -4,12 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
-:root {
+/* :root {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   position: relative;
@@ -190,16 +189,7 @@ body {
   gap: 10px;
 }
 
-/* .i2 {
-  width: 30px;
-  height: 30px;
-  font-size: 30px;
-}
 
-.i2:hover {
-  border-radius: 50%;
-  background: #fff;
-} */
 
 .social-media-icon {
   display: inline-block;
@@ -312,6 +302,12 @@ body {
   filter: drop-shadow(4px 4px 6px rgba(231, 178, 4, 0.5));
 }
 
+/*  SCROLL UP  */
+.button-h:hover {
+  font-weight: 700;
+  transform: scale(1.1);
+  filter: drop-shadow(-4px 4px 6px rgba(231, 178, 4, 0.5));
+}
 
 @media screen and (max-width:800px) {
   .nav-menu {
@@ -345,6 +341,10 @@ body {
     text-align: center;
     width: 80%;
     margin-bottom: 40px;
+  }
+
+  .button-h {
+    left: 50%;
   }
 }
 

@@ -4,16 +4,16 @@
   border: 4px double rgba(241, 241, 241, 0.5);
   color: white;
   border-width: 6px 0;
-  margin: 5px;
+  margin: 3px;
   margin-bottom: 2px;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 13px;
   text-align: center;
   width: 300px;
 }
 
 .logo-span {
-  font: 700 25px "Oswald", sans-serif;
+  font: 700 22px "Oswald", sans-serif;
   letter-spacing: 2px;
   margin: 2px;
   text-shadow: 0 0 80px rgba(255, 255, 255, .5);
