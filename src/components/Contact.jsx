@@ -22,14 +22,15 @@ const Contact = () => {
       <h2 className='subtitle'> MI CONTACTO </h2>
       <div className='n-contact'>
         <img src={contact} alt="" />
-        <div >
+        <div className='contact-squad'>
+          <h2 style={{color: "white", fontWeight: "400", textAlign: "center"}}>Aquí tu mensajito 👇🏽 </h2>
           <form ref={form} onSubmit={sendEmail} className='contact-form'>
-            <label>Nombre</label>
+            <label style={{fontWeight: "400"}}>Nombre</label>
             <input type="text" name="user_name" className='contact-input' />
-            <label>Email</label>
+            <label style={{fontWeight: "400"}}>Email</label>
             <input type="email" name="user_email" className='contact-input' />
-            <label>Mensaje</label>
-            <textarea name="message" cols={30} rows={8} />
+            <label style={{fontWeight: "400"}}>Mensaje</label>
+            <textarea name="message" cols={30} rows={8} className='contact-ta' placeholder=' -. Escribe aquí tu consulta .-'/>
             <input type="submit" value="Enviar" className='but-send' />
           </form>
         </div>

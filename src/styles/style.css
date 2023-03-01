@@ -145,16 +145,36 @@ body {
 }
 
 
-
-
-
 .subtitle {
   text-align: center;
   font-weight: 300;
-  color: #764ba2;
+  color: purple;
   margin-bottom: 40px;
   font-size: 40px;
+  display: inline-block;
+
+  position: relative;
 }
+
+.subtitle:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: purple;
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
+}
+
+.subtitle:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
 
 .technology-container {
   display: flex;
@@ -188,8 +208,6 @@ body {
   flex-direction: row;
   gap: 10px;
 }
-
-
 
 .social-media-icon {
   display: inline-block;
@@ -277,11 +295,13 @@ body {
   width: 150px;
   border-radius: 3px;
   box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  background-color: antiquewhite;
 }
 
 .contact-form textarea {
   border-radius: 3px;
   box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  background-color: antiquewhite;
 }
 
 .but-send {
@@ -302,14 +322,42 @@ body {
   filter: drop-shadow(4px 4px 6px rgba(231, 178, 4, 0.5));
 }
 
-/*  SCROLL UP  */
+/*  SCROLL  */
+/* .button-h{
+  right: 5%;
+} */
 .button-h:hover {
-  font-weight: 700;
+  font-weight: 300;
   transform: scale(1.1);
-  filter: drop-shadow(-4px 4px 6px rgba(231, 178, 4, 0.5));
+  filter: drop-shadow(-2px 2px 3px rgba(231, 178, 4, 0.7));
 }
 
-@media screen and (max-width:800px) {
+.n-contact img {
+  width: 55%;
+  min-width: 300px;
+  max-width: 565px;
+  background: rgb(118, 75, 162, 0.4);
+  border-radius: 5% 20%;
+  transform: skew();
+  margin-right: 25px;
+}
+
+.contact-squad {
+  width: 40%;
+  background: rgb(118, 75, 162, 0.4);
+  border-radius: 5px;
+  padding: 10px 20px 10px 15px;
+}
+
+.contact-input {
+  width: 80%;
+}
+
+.contact-ta {
+  width: 90%;
+}
+
+@media screen and (max-width:850px) {
   .nav-menu {
     width: 50vw;
   }
@@ -331,7 +379,6 @@ body {
     justify-content: center;
   }
 
-
   .social-media-icon {
     /* width: 80%; */
     justify-content: space-evenly;
@@ -343,8 +390,13 @@ body {
     margin-bottom: 40px;
   }
 
+  .contact-squad {
+    margin: 15px;
+    min-width: 380px;
+  }
+
   .button-h {
-    left: 50%;
+    display: none;
   }
 }
 
@@ -367,5 +419,13 @@ body {
 
   .sub-title {
     font-size: 30px;
+  }
+
+  .contact-squad {
+    margin: 15px;
+  }
+
+  .button-h {
+    display: none;
   }
 }

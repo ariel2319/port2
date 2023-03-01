@@ -11,7 +11,7 @@ height: 90%;`
 
 export const Button =
   styled.div`position: fixed; 
-left: 95%;
+left: 95%; 
 ${'' /* border: 1px solid green; */}
 bottom: 20%;
 height: 25px;

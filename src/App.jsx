@@ -34,7 +34,7 @@ function App() {
 
 
         <ScrollButton />
-        <Bubble />
+        {/* <Bubble /> */}
       </Fragment>
     </div>
   )
